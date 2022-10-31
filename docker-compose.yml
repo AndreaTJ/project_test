@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  frontend:
+    image: htrvolker/stack-tutorial-frontend:blue
+    ports:
+    - published: 5000
+      target: 5000
+  backend:
+    image: htrvolker/stack-tutorial-backend:numbers
+    ports:
+    - published: 5001
+      target: 5001
